@@ -1,0 +1,357 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #6A38C2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card {
+  width: 350px; /* Fixed width for larger screens */
+  height: 500px; /* Fixed height for larger screens */
+  border-radius: 5%;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.curved {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  background: #753cd6;
+  border-bottom-left-radius: 50% 22%;
+  border-bottom-right-radius: 50% 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.container-eg-btn-4 {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto 10px;
+  padding: .5em;
+  line-height: normal;
+}
+
+.container-eg-btn-4 .button {
+  background: #af40ff;
+  margin: 15px;
+  padding: 18px 22px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  transition: .3s;
+  z-index: 1;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 12px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 700;
+}
+
+.container-eg-btn-4 .button-7 {
+  background: #fff;
+  box-shadow: 0px 6px 16px 0px #8d7bb187;
+  overflow: hidden;
+}
+
+.container-eg-btn-4 .button-7:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 12px;
+  background-color: #753cd6;
+  transition: all 0.3s ease;
+}
+
+.container-eg-btn-4 .button-7:hover {
+  color: #5f6095;
+}
+
+.container-eg-btn-4 .button-7:hover:after {
+  height: 5px;
+}
+
+.container-eg-btn-4 .button-7:active {
+  box-shadow: 0px 4px 8px 0px #8d7bb187;
+}
+
+.name {
+  margin-bottom: 8%;
+  margin-top: 4%;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.desc {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  color: cornsilk;
+  font-size: 16px;
+  font-style: italic;
+  user-select: none;
+  cursor: default;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .card {
+    width: 80%;
+    height: auto; /* Let height adjust based on content */
+    /* padding: 20px; */
+    max-width: 350px; /* Ensure it doesn't stretch too much */
+    min-height: 450px; /* Maintain a minimum height */
+  }
+
+  .curved {
+    height: 120px;
+  }
+
+  .img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .name {
+    font-size: medium;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    height: auto;
+    /* padding: 20px; */
+  }
+
+  .curved {
+    height: 100px;
+  }
+
+  .img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .name {
+    font-size: small;
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 95%;
+    height: auto;
+    /* padding: 15px; */
+    min-height: 400px;
+  }
+
+  .curved {
+    height: 80px;
+  }
+
+  .img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .name {
+    font-size: smaller;
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.body{
+  height: 100vh;
+  width: 100vw;
+  background-color: #6A38C2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card{
+  height: 65%;
+  width: 25%;
+  border-radius: 10px;
+  text-align: center;
+  border-radius: 5%;
+  backdrop-filter: blur(20px); /* Reduced the blur for a more realistic effect 
+  background-color: rgba(255, 255, 255, 0.2);  Semi-transparent background 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+                            
+/* 
+.curved{
+  position: relative;
+  height: 150px;
+  width: 100%;
+  background: #753cd6;
+  border-bottom-left-radius:50% 22%;
+  border-bottom-right-radius:50% 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+.container-eg-btn-4 {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto 10px;
+  padding: .5em;
+  line-height: normal;
+}
+.container-eg-btn-4 .button {
+  background: #af40ff;
+  margin: 15px;
+  padding: 18px 22px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  transition: .3s;
+  z-index: 1;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 12px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 700;
+}
+
+.container-eg-btn-4 .button-7{
+    background: #fff;
+    box-shadow: 0px 6px 16px 0px #8d7bb187;
+    overflow: hidden;
+}
+.container-eg-btn-4 .button-7:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 12px;
+    background-color: #753cd6;
+    transition: all 0.3s ease;
+    background-image: #753cd6;
+}
+.container-eg-btn-4 .button-7:hover{
+    color: #5f6095;
+}
+.container-eg-btn-4 .button-7:hover:after{
+    height: 5px;
+}
+.container-eg-btn-4 .button-7:active{
+    box-shadow: 0px 4px 8px 0px #8d7bb187;
+} */
+/* 
+.name{
+  margin-bottom: 8%;
+  margin-top: 4%;
+  font-size:larger;
+  font-weight: bold;
+}
+
+.desc{
+  margin-top: 3%;
+  margin-bottom: 5%;
+  color: cornsilk;
+  font-size: 16px;
+  font-style:italic;
+
+  user-select: none;
+  cursor: default;
+} */
