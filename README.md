@@ -28,7 +28,7 @@
   <li>Install the dependencies:</li>
   <pre><code>npm install</code></pre>
   <li>Start the development server:</li>
-  <pre><code>npm start</code></pre>
+  <pre><code>npm run dev</code></pre>
   <li>Open your web browser and go to <code>http://localhost:3000</code> to view the profile card.</li>
 </ol>
 
@@ -50,6 +50,3 @@
   <li>Implement user authentication to fetch profile data dynamically.</li>
   <li>Enhance the UI with animations and additional styling options.</li>
 </ul>
-
-<h2>License</h2>
-<p>This project is open-source and available under the <a href="LICENSE">MIT License</a>.</p>
