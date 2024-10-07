@@ -2,7 +2,7 @@
 
 <h1>Profile Card</h1>
 
-<p>This project is a responsive profile card created using <strong>React.js</strong>. It showcases user information in a visually appealing way, making it easy to present details such as name, bio, and social media links.</p>
+<p>This project is a profile card created using <strong>React.js</strong>. It showcases user information in a visually appealing way, making it easy to present details such as name, bio, and social media links.</p>
 
 <h2>Features</h2>
 <ul>
